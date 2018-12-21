@@ -1,0 +1,32 @@
+2018-12-22 00:40:16,950 ERROR: Exception on / [GET] [in /Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/routes.py", line 35, in index
+    prev_url=prev_url)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/templates/index.html", line 3, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/wtf.html
+2018-12-22 00:43:20,171 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:49]
