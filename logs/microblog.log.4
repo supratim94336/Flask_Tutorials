@@ -1,0 +1,101 @@
+2018-12-22 00:22:23,324 ERROR: Exception on / [GET] [in /Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/routes.py", line 34, in index
+    prev_url=prev_url)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/templates/base.html", line 72, in template
+    {% block content %}
+TemplateAssertionError: block 'content' defined twice
+2018-12-22 00:25:52,405 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:46]
+2018-12-22 00:25:53,799 ERROR: Exception on / [GET] [in /Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/routes.py", line 22, in index
+    form = PostForm()
+NameError: global name 'PostForm' is not defined
+2018-12-22 00:27:00,024 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:46]
+2018-12-22 00:27:01,793 ERROR: Exception on / [GET] [in /Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/routes.py", line 35, in index
+    prev_url=prev_url)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/templates/base.html", line 71, in template
+    {% block content %}
+TemplateAssertionError: block 'content' defined twice
+2018-12-22 00:39:03,083 ERROR: Exception on /user/sups [GET] [in /Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/routes.py", line 98, in user
+    return render_template('user.html', user=user, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/templates/base.html", line 71, in template
+    {% block content %}
+TemplateAssertionError: block 'content' defined twice
+2018-12-22 00:40:14,950 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:46]

@@ -1,0 +1,108 @@
+2018-12-16 19:31:44,974 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
+2018-12-16 19:31:49,615 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
+2018-12-16 19:31:58,876 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
+2018-12-16 22:30:38,395 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
+2018-12-16 22:30:41,913 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
+2018-12-21 05:54:15,491 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
+2018-12-21 05:54:55,734 ERROR: Exception on / [GET] [in /Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/routes.py", line 29, in index
+    return render_template("index.html", title='Home', form=form, user=user, posts=posts)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/templates/index.html", line 10, in template
+    <span style="color: red;">[{{}}]</span>
+TemplateSyntaxError: Expected an expression, got 'end of print statement'
+2018-12-21 05:56:53,613 ERROR: Exception on / [GET] [in /Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/routes.py", line 29, in index
+    return render_template("index.html", title='Home', form=form, user=user, posts=posts)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/templates/index.html", line 10, in template
+    <span style="color: red;">[{{}}]</span>
+TemplateSyntaxError: Expected an expression, got 'end of print statement'
+2018-12-21 05:57:01,643 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
+2018-12-21 05:57:02,971 ERROR: Exception on / [GET] [in /Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/routes.py", line 29, in index
+    return render_template("index.html", title='Home', form=form, user=user, posts=posts)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/venv/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Supra/PycharmProjects/Flask_Tutorials/app/templates/index.html", line 10, in template
+    <span style="color: red;">[{{}}]</span>
+TemplateSyntaxError: Expected an expression, got 'end of print statement'
+2018-12-21 05:58:23,240 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
+2018-12-21 06:13:31,080 INFO: Microblog startup [in /Users/Supra/PycharmProjects/Flask_Tutorials/app/__init__.py:43]
