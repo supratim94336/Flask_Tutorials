@@ -3,7 +3,7 @@
 {% block title %}
     {% if title %}{{ title }} - Microblog{% else %}Welcome to Microblog{% endif %}
 {% endblock %}
-
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 {% block navbar %}
     <nav class="navbar navbar-default">
         <div class="container">
@@ -52,4 +52,5 @@
 {% block scripts %}
     {{ super() }}
     {{ moment.include_moment() }}
+    {{ moment.lang(g.locale) }}
 {% endblock %}
