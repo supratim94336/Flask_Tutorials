@@ -79,3 +79,8 @@ Traceback (most recent call last):
     <h1>{{ _(Hi, %(username)s!', username=current_user.username) }}</h1>
 TemplateSyntaxError: unexpected '%'
 2019-01-02 16:44:45,141 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
+2019-01-03 10:54:02,523 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
+2019-01-03 10:54:12,076 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
+2019-01-03 10:54:59,529 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
+2019-01-03 11:29:09,815 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
+2019-01-03 12:04:53,812 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
