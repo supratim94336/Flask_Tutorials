@@ -87,3 +87,6 @@ NotFoundError: NotFoundError(404, u'index_not_found_exception', u'no such index'
 2019-01-03 16:45:30,851 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
 2019-01-03 16:45:41,535 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
 2019-01-03 16:47:43,862 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 11:45:18,812 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 11:58:39,408 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 12:47:56,571 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
