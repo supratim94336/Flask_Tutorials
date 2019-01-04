@@ -1,4 +1,4 @@
-2019-01-03 13:49:03,280 ERROR: Exception on /auth/login [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
+2019-01-04 14:13:32,846 ERROR: Exception on / [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -10,8 +10,10 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\auth\routes.py", line 29, in login
-    return render_template('auth/login.html', title='Sign In', form=form)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\main\routes.py", line 42, in index
+    prev_url=prev_url)
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 135, in render_template
     context, ctx.app)
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 117, in _render
@@ -20,7 +22,7 @@ Traceback (most recent call last):
     return self.environment.handle_exception(exc_info, True)
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
     reraise(exc_type, exc_value, tb)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\auth\login.html", line 2, in top-level template code
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\index.html", line 2, in top-level template code
     {% import 'bootstrap/wtf.html' as wtf %}
   File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 1, in top-level template code
     {% extends 'bootstrap/base.html' %}
@@ -32,19 +34,13 @@ Traceback (most recent call last):
     {% block body -%}
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
     {% block navbar %}
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 17, in block "navbar"
-    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\helpers.py", line 345, in url_for
-    force_external=external)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\werkzeug\routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
-2019-01-03 13:52:56,980 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:70]
-2019-01-03 13:53:01,460 ERROR: Exception on /auth/login [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 36, in block "navbar"
+    {% set new_messages = current_user.new_messages() %}
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\models.py", line 142, in new_messages
+    last_read_time = self.last_message_read_line or datetime(1900, 1, 1)
+AttributeError: 'User' object has no attribute 'last_message_read_line'
+2019-01-04 14:13:53,299 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 14:13:54,634 ERROR: Exception on / [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -56,8 +52,10 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\auth\routes.py", line 29, in login
-    return render_template('auth/login.html', title='Sign In', form=form)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\main\routes.py", line 42, in index
+    prev_url=prev_url)
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 135, in render_template
     context, ctx.app)
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 117, in _render
@@ -66,7 +64,7 @@ Traceback (most recent call last):
     return self.environment.handle_exception(exc_info, True)
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
     reraise(exc_type, exc_value, tb)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\auth\login.html", line 2, in top-level template code
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\index.html", line 2, in top-level template code
     {% import 'bootstrap/wtf.html' as wtf %}
   File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 1, in top-level template code
     {% extends 'bootstrap/base.html' %}
@@ -76,12 +74,10 @@ Traceback (most recent call last):
     {%- block html %}
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
     {% block body -%}
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
-    {% block content -%}
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 48, in block "content"
-    {% block app_content %}{% endblock %}
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\auth\login.html", line 12, in block "app_content"
-    <p>{{ _('New User?') }} <a href="{{ url_for('register') }}">{{ _('Click to Register!') }}</a></p>
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 26, in block "body"
+    {% block scripts %}
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 136, in block "scripts"
+    $.ajax('{{ url_for('main.notifications') }}?since=' + since).done(
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\helpers.py", line 356, in url_for
     return appctx.app.handle_url_build_error(error, endpoint, values)
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
@@ -90,8 +86,6 @@ Traceback (most recent call last):
     force_external=external)
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\werkzeug\routing.py", line 1776, in build
     raise BuildError(endpoint, values, method, self)
-BuildError: Could not build url for endpoint 'register'. Did you mean 'auth.register' instead?
-2019-01-03 13:54:04,790 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:70]
-2019-01-03 13:56:07,334 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:70]
-2019-01-03 15:58:46,821 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:00:52,595 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+BuildError: Could not build url for endpoint 'main.notifications'. Did you mean 'main.unfollow' instead?
+2019-01-04 14:16:10,815 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 14:18:01,427 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]

@@ -1,4 +1,4 @@
-2019-01-03 16:01:08,634 ERROR: Exception on /search [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
+2019-01-04 14:18:03,668 ERROR: Exception on /auth/login [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -10,13 +10,20 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\main\routes.py", line 130, in search
-    posts, total = Post.search(g.search_form.q.data, page, current_app.config['POSTS_PER_PAGE'])
-AttributeError: type object 'Post' has no attribute 'search'
-2019-01-03 16:03:18,101 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:03:21,101 ERROR: Exception on /search [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\auth\routes.py", line 29, in login
+    return render_template('auth/login.html', title='Sign In', form=form)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 16, in template
+    <a class="navbar-brand" href="{{ url_for('main.index') }}">Microblog</a>
+TemplateSyntaxError: expected token ',', got 'main'
+2019-01-04 14:18:23,063 ERROR: Exception on /auth/login [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -28,27 +35,21 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\main\routes.py", line 130, in search
-    posts, total = Post.search(g.search_form.q.data, page, current_app.config['POSTS_PER_PAGE'])
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\models.py", line 15, in search
-    ids, total = query_index(cls.__tablename__, expression, page, per_page)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\search.py", line 25, in query_index
-    per_page})
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\client\utils.py", line 76, in _wrapped
-    return func(*args, params=params, **kwargs)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\client\__init__.py", line 660, in search
-    doc_type, '_search'), params=params, body=body)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\transport.py", line 318, in perform_request
-    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 186, in perform_request
-    self._raise_error(response.status, raw_data)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\connection\base.py", line 125, in _raise_error
-    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
-NotFoundError: NotFoundError(404, u'index_not_found_exception', u'no such index')
-2019-01-03 16:03:58,150 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:04:03,506 ERROR: Exception on /search [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\auth\routes.py", line 29, in login
+    return render_template('auth/login.html', title='Sign In', form=form)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 16, in template
+    <a class="navbar-brand" href="{{ url_for('main.index') }}">Microblog</a>
+TemplateSyntaxError: expected token ',', got 'main'
+2019-01-04 14:19:09,897 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 14:19:14,846 ERROR: Exception on /auth/login [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -60,33 +61,17 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\main\routes.py", line 130, in search
-    posts, total = Post.search(g.search_form.q.data, page, current_app.config['POSTS_PER_PAGE'])
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\models.py", line 15, in search
-    ids, total = query_index(cls.__tablename__, expression, page, per_page)
-  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\search.py", line 25, in query_index
-    per_page})
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\client\utils.py", line 76, in _wrapped
-    return func(*args, params=params, **kwargs)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\client\__init__.py", line 660, in search
-    doc_type, '_search'), params=params, body=body)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\transport.py", line 318, in perform_request
-    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 186, in perform_request
-    self._raise_error(response.status, raw_data)
-  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\connection\base.py", line 125, in _raise_error
-    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
-NotFoundError: NotFoundError(404, u'index_not_found_exception', u'no such index')
-2019-01-03 16:13:58,549 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:35:25,295 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:36:52,186 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:37:02,671 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:41:49,086 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:45:30,851 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:45:41,535 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-03 16:47:43,862 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-04 11:45:18,812 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-04 11:58:39,408 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
-2019-01-04 12:47:56,571 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\auth\routes.py", line 29, in login
+    return render_template('auth/login.html', title='Sign In', form=form)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\templates\base.html", line 16, in template
+    <a class="navbar-brand" href="{{ url_for('main.index') }}">Microblog</a>
+TemplateSyntaxError: expected token ',', got 'main'
+2019-01-04 14:20:18,880 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]

@@ -1,100 +1,95 @@
-2018-12-23 21:13:38,691 INFO: Microblog startup [in ./app/__init__.py:49]
-2018-12-23 21:13:39,277 INFO: Microblog startup [in ./app/__init__.py:49]
-2019-01-02 14:14:33,016 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:49]
-2019-01-02 14:14:41,467 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:49]
-2019-01-02 14:14:47,849 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:49]
-2019-01-02 14:14:52,950 ERROR: Exception on /favicon.ico [GET] [in c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py:1761]
+2019-01-03 16:01:08,634 ERROR: Exception on /search [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
-    return handler(e)
-TypeError: not_found_error() takes no arguments (1 given)
-2019-01-02 14:15:07,733 ERROR: Exception on /favicon.ico [GET] [in c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py:1761]
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\main\routes.py", line 130, in search
+    posts, total = Post.search(g.search_form.q.data, page, current_app.config['POSTS_PER_PAGE'])
+AttributeError: type object 'Post' has no attribute 'search'
+2019-01-03 16:03:18,101 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:03:21,101 ERROR: Exception on /search [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
-    return handler(e)
-TypeError: not_found_error() takes no arguments (1 given)
-2019-01-02 14:24:44,213 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:49]
-2019-01-02 14:24:53,928 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:49]
-2019-01-02 14:52:03,424 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
-2019-01-02 14:52:14,676 ERROR: Exception on /favicon.ico [GET] [in c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py:1761]
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\main\routes.py", line 130, in search
+    posts, total = Post.search(g.search_form.q.data, page, current_app.config['POSTS_PER_PAGE'])
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\models.py", line 15, in search
+    ids, total = query_index(cls.__tablename__, expression, page, per_page)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\search.py", line 25, in query_index
+    per_page})
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\client\utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\client\__init__.py", line 660, in search
+    doc_type, '_search'), params=params, body=body)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 186, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\connection\base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+NotFoundError: NotFoundError(404, u'index_not_found_exception', u'no such index')
+2019-01-03 16:03:58,150 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:04:03,506 ERROR: Exception on /search [GET] [in c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
-    return handler(e)
-TypeError: not_found_error() takes no arguments (1 given)
-2019-01-02 14:52:25,236 ERROR: Exception on /favicon.ico [GET] [in c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
-    return handler(e)
-TypeError: not_found_error() takes no arguments (1 given)
-2019-01-02 14:52:25,371 ERROR: Exception on /favicon.ico [GET] [in c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
-    return handler(e)
-TypeError: not_found_error() takes no arguments (1 given)
-2019-01-02 14:59:00,214 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
-2019-01-02 14:59:05,749 ERROR: Exception on /favicon.ico [GET] [in c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
-    return handler(e)
-TypeError: not_found_error() takes no arguments (1 given)
-2019-01-02 15:01:30,105 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
-2019-01-02 15:01:36,240 ERROR: Exception on /favicon.ico [GET] [in c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
-    return handler(e)
-TypeError: not_found_error() takes no arguments (1 given)
-2019-01-02 15:03:37,743 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
-2019-01-02 15:03:40,910 ERROR: Exception on /favicon.ico [GET] [in c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\supratimdas\pycharmprojects\preprocessingpipelinempfe\flask_tutorials\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
-    return handler(e)
-TypeError: not_found_error() takes no arguments (1 given)
-2019-01-02 15:04:29,759 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:51]
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\main\routes.py", line 130, in search
+    posts, total = Post.search(g.search_form.q.data, page, current_app.config['POSTS_PER_PAGE'])
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\models.py", line 15, in search
+    ids, total = query_index(cls.__tablename__, expression, page, per_page)
+  File "C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\search.py", line 25, in query_index
+    per_page})
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\client\utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\client\__init__.py", line 660, in search
+    doc_type, '_search'), params=params, body=body)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 186, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "c:\users\supratimdas\pycharmprojects\flask_tutorials\flask_tutorials\lib\site-packages\elasticsearch\connection\base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+NotFoundError: NotFoundError(404, u'index_not_found_exception', u'no such index')
+2019-01-03 16:13:58,549 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:35:25,295 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:36:52,186 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:37:02,671 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:41:49,086 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:45:30,851 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:45:41,535 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-03 16:47:43,862 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 11:45:18,812 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 11:58:39,408 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 12:47:56,571 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 14:10:49,165 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 14:10:56,950 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
+2019-01-04 14:11:02,832 INFO: Microblog startup [in C:\Users\supratimdas\PycharmProjects\Flask_Tutorials\app\__init__.py:71]
